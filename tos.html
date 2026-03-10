@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canopy Oak Artisans | Custom Solid Oak & Rainforest Furniture</title>
+  <meta name="description" content="Canopy Oak Artisans specializes in custom solid oak furniture, rainforest-inspired designs, and sustainable woodworking in New York.">
+  <link rel="icon" href="favicon.ico">
+  <script src="https://cdn.tailwindcss.com?v=3.4.0"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap');
+    body {
+      font-family: 'Sora', sans-serif;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background-color: #e2e8f0; /* background */
+      color: #1e293b; /* text_main */
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 600; /* heading */
+    }
+    .shadow-neomorphic-flat {
+      box-shadow: 8px 8px 16px #cbd5e1, -8px -8px 16px #f8fafc;
+    }
+    .shadow-neomorphic-pressed {
+      box-shadow: inset 8px 8px 16px #cbd5e1, inset -8px -8px 16px #f8fafc;
+    }
+    .shadow-card-medium {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .bg-primary { background-color: #5413eb; }
+    .bg-primary-light { background-color: #9b79eb; }
+    .bg-primary-dark { background-color: #3a0da5; }
+    .bg-secondary { background-color: #b12cd2; }
+    .bg-accent { background-color: #b3ed2a; }
+    .bg-background { background-color: #e2e8f0; }
+    .bg-surface { background-color: #e2e8f0; }
+    .text-text-main { color: #1e293b; }
+    .text-text-muted { color: #475569; }
+    .rounded-20px { border-radius: 20px; }
+    .hover-bg-shift:hover {
+      background-color: #c0ee4b; /* slightly lighter accent for hover */
+      transition: background-color 0.3s ease;
+    }
+    .nav-link-hover:hover {
+      color: #5413eb; /* primary color on hover */
+      transition: color 0.3s ease;
+    }
+    .neomorphic-card {
+      background-color: #e2e8f0; /* surface */
+      border-radius: 20px;
+      box-shadow: 8px 8px 16px #cbd5e1, -8px -8px 16px #f8fafc;
+    }
+    /* Simple hover zoom for images */
+    .img-zoom:hover {
+      transform: scale(1.03);
+      transition: transform 0.3s ease-in-out;
+    }
+    /* Fade-in for sections */
+    .fade-in-section {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .fade-in-section.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .fade-in-section {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class=" antialiased">
+  <header class="bg-surface fixed w-full z-50 transition-all duration-300 shadow-none" id="navbar">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-semibold text-primary">Canopy Oak Artisans</a>
+      <div class="hidden md:flex space-x-8">
+        <a href="#about" class="text-text-main hover:text-primary nav-link-hover">About</a>
+        <a href="#services" class="text-text-main hover:text-primary nav-link-hover">Services</a>
+        <a href="#sustainability" class="text-text-main hover:text-primary nav-link-hover">Sustainability</a>
+        <a href="#testimonials" class="text-text-main hover:text-primary nav-link-hover">Testimonials</a>
+        <a href="#contact" class="text-text-main hover:text-primary nav-link-hover">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button class="text-text-main focus:outline-none" id="mobile-menu-button">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-surface shadow-neomorphic-flat pb-4">
+      <a href="#about" class="block px-4 py-2 text-text-main hover:bg-background nav-link-hover">About</a>
+      <a href="#services" class="block px-4 py-2 text-text-main hover:bg-background nav-link-hover">Services</a>
+      <a href="#sustainability" class="block px-4 py-2 text-text-main hover:bg-background nav-link-hover">Sustainability</a>
+      <a href="#testimonials" class="block px-4 py-2 text-text-main hover:bg-background nav-link-hover">Testimonials</a>
+      <a href="#contact" class="block px-4 py-2 text-text-main hover:bg-background nav-link-hover">Contact</a>
+    </div>
+  </header>
+<main>
+<style>
+  #canopy-oak-artisans-terms {
+    padding-top: 7rem;
+  }
+</style>
+<section id="canopy-oak-artisans-terms">
+  <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 2rem; margin-top: 0;">Terms and Conditions for Canopy Oak Artisans</h2>
+  <p style="font-size: 1rem; margin-bottom: 1.5rem; line-height: 1.6;">Welcome to Canopy Oak Artisans. These Terms and Conditions govern your access to and use of our website, which showcases our custom solid oak furniture inspired by rainforest themes and sustainable practices. By accessing or using our online platform, you agree to be bound by these Terms and our Privacy Policy. If you do not agree with any part of these Terms, you must not use our service.</p>
+
+  <h3 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem; margin-top: 2rem;">1. Definitions</h3>
+  <ul style="list-style: disc; margin-left: 2rem; margin-bottom: 1.5rem;">
+    <li style="font-size: 1rem; margin-bottom: 0.5rem; line-height: 1.6;">"Company", "we", "us", or "our" refers to Canopy Oak Artisans.</li>
+    <li style="font-size: 1rem; margin-bottom: 0.5rem; line-height: 1.6;">"Service" refers to our website and the information, content, and services provided through it.</li>
+    <li style="font-size: 1rem; margin-bottom: 0.5rem; line-height: 1.6;">"User", "you", or "your" refers to any individual accessing or using our Service.</li>
+  </ul>
+
+  <h3 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem; margin-top: 2rem;">2. Intellectual Property Rights</h3>
+  <p style="font-size: 1rem; margin-bottom: 1rem; line-height: 1.6;">All content on this site, including but not limited to designs, text, graphics, images, logos, and materials related to our custom solid oak furniture, rainforest-inspired designs, sustainable woodworking practices, restoration services, wood carving, and bespoke cabinetry, is the property of Canopy Oak Artisans or its content suppliers and protected by international copyright laws. Unauthorized use, reproduction, or distribution of any content without our express written permission is strictly prohibited.</p>
+
+  <h3 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem; margin-top: 2rem;">3. Use of Our Service</h3>
+  <ul style="list-style: disc; margin-left: 2rem; margin-bottom: 1.5rem;">
+    <li style="font-size: 1rem; margin-bottom: 0.5rem; line-height: 1.6;">You agree to use our Service only for lawful purposes and in a way that does not infringe the rights of, restrict, or inhibit anyone else's use and enjoyment of our Service.</li>
+    <li style="font-size: 1rem; margin-bottom: 0.5rem; line-height: 1.6;">You must not misuse our site by knowingly introducing viruses, Trojans, worms, logic bombs, or other material that is malicious or technologically harmful.</li>
+    <li style="font-size: 1rem; margin-bottom: 0.5rem; line-height: 1.6;">Commercial use or publication of any content displayed on our site is strictly prohibited without prior authorization from Canopy Oak Artisans.</li>
+  </ul>
+
+  <h3 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem; margin-top: 2rem;">4. Product Information and Availability</h3>
+  <p style="font-size: 1rem; margin-bottom: 1rem; line-height: 1.6;">We strive to ensure that all information about our custom solid oak furniture and services (including pricing, descriptions, and images) is accurate and up-to-date. However, we do not warrant that product descriptions or other content of this site is accurate, complete, reliable, current, or error-free. Given the custom and handcrafted nature of our products, designs and wood characteristics may vary slightly from displayed images. Inquiries regarding specific pieces or custom orders can be made via the contact information provided on our site.</p>
+
+  <h3 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem; margin-top: 2rem;">5. Third-Party Links</h3>
+  <p style="font-size: 1rem; margin-bottom: 1rem; line-height: 1.6;">Our Service may contain links to third-party websites or services that are not owned or controlled by Canopy Oak Artisans. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites or services. You further acknowledge and agree that Canopy Oak Artisans shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods or services available on or through any such websites or services.</p>
+
+  <h3 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem; margin-top: 2rem;">6. Disclaimer of Warranties</h3>
+  <p style="font-size: 1rem; margin-bottom: 1rem; line-height: 1.6;">Our Service is provided on an "as is" and "as available" basis without any warranties of any kind, either express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement, or course of performance.</p>
+
+  <h3 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem; margin-top: 2rem;">7. Limitation of Liability</h3>
+  <p style="font-size: 1rem; margin-bottom: 1rem; line-height: 1.6;">In no event shall Canopy Oak Artisans, its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of or inability to access or use the Service; (ii) any conduct or content of any third party on the Service; (iii) any content obtained from the Service; and (iv) unauthorized access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose.</p>
+
+  <h3 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem; margin-top: 2rem;">8. Governing Law</h3>
+  <p style="font-size: 1rem; margin-bottom: 1rem; line-height: 1.6;">These Terms shall be governed and construed in accordance with the laws of New York, USA, without regard to its conflict of law provisions.</p>
+
+  <h3 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem; margin-top: 2rem;">9. Changes to These Terms</h3>
+  <p style="font-size: 1rem; margin-bottom: 1rem; line-height: 1.6;">We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will try to provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion. By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service.</p>
+
+  <h3 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem; margin-top: 2rem;">10. Contact Us</h3>
+  <p style="font-size: 1rem; margin-bottom: 1rem; line-height: 1.6;">If you have any questions about these Terms, please contact us:</p>
+  <ul style="list-style: none; margin-left: 0; padding-left: 0; margin-bottom: 1.5rem;">
+    <li style="font-size: 1rem; margin-bottom: 0.5rem; line-height: 1.6;">By mail: Herkimer Street, New York, New York, 11207, USA</li>
+  </ul>
+</section>
+</main>
+<footer class="bg-[#212529] text-white py-16 mt-20 md:mt-32 relative overflow-hidden">
+    
+    <div class="absolute top-0 left-0 w-full h-2" style="box-shadow: inset 0 8px 16px rgba(0,0,0,0.2), inset 0 -8px 16px rgba(255,255,255,0.05);"></div>
+
+    <div class="container mx-auto px-4 text-center relative z-10">
+      <h3 class="text-3xl font-bold mb-4 text-white">Canopy Oak Artisans</h3>
+      <p class="text-lg mb-8 text-gray-300">Crafting the ultimate expression of nature.</p>
+      <div class="flex flex-wrap justify-center space-x-6 mb-8 text-sm">
+        <a href="./privacy.html" class="hover:text-primary-light transition-colors duration-300">Privacy Policy</a>
+        <a href="./tos.html" class="hover:text-primary-light transition-colors duration-300">Terms of Service</a>
+        <a href="#sustainability" class="hover:text-primary-light transition-colors duration-300">Sustainability Report</a>
+      </div>
+      <p class="text-gray-400 text-sm">&copy; 2024 Canopy Oak Artisans. All rights reserved.</p>
+    </div>
+
+    
+    <div id="cookie-consent-banner" class="fixed bottom-0 left-0 w-full bg-gray-800 text-white p-4 flex flex-col md:flex-row items-center justify-between z-50 shadow-lg">
+      <p class="text-sm mb-2 md:mb-0">We use cookies to enhance your browsing experience. By continuing, you agree to our <a href="./privacy.html" class="text-primary-light underline hover:no-underline">Privacy Policy</a>.</p>
+      <button id="accept-cookies" class="bg-accent text-primary-dark px-6 py-2 rounded-20px text-sm font-semibold hover-bg-shift focus:outline-none focus:ring-2 focus:ring-accent">Accept</button>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when a link is clicked
+    document.querySelectorAll('#mobile-menu a').forEach(item => {
+        item.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    });
+
+    // Navbar shadow on scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('shadow-neomorphic-flat');
+      } else {
+        navbar.classList.remove('shadow-neomorphic-flat');
+      }
+    });
+
+    // Intersection Observer for fade-in sections
+    const fadeElements = document.querySelectorAll('.fade-in-section');
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    fadeElements.forEach(el => {
+      observer.observe(el);
+    });
+
+    // Cookie Consent Logic
+    const cookieBanner = document.getElementById('cookie-consent-banner');
+    const acceptButton = document.getElementById('accept-cookies');
+    const cookieNamePrefix = 'consent_'; 
+    const fullCookieName = cookieNamePrefix + 'canopyoak_'; // Use a unique prefix to minimize conflicts
+
+    function setCookie(name, value, days) {
+        let expires = "";
+        if (days) {
+            const date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+    }
+
+    function getCookie(name) {
+        const nameEQ = name + "=";
+        const ca = document.cookie.split(';');
+        for(let i=0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+
+    // Check for existing cookie consent
+    if (!getCookie(fullCookieName)) {
+        cookieBanner.style.display = 'flex';
+    } else {
+        cookieBanner.style.display = 'none';
+    }
+
+    acceptButton.addEventListener('click', () => {
+        setCookie(fullCookieName, 'accepted', 365); // Store consent for 365 days
+        cookieBanner.style.display = 'none';
+    });
+  </script>
+</body>
+</html>

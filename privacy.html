@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canopy Oak Artisans | Custom Solid Oak & Rainforest Furniture</title>
+  <meta name="description" content="Canopy Oak Artisans specializes in custom solid oak furniture, rainforest-inspired designs, and sustainable woodworking in New York.">
+  <link rel="icon" href="favicon.ico">
+  <script src="https://cdn.tailwindcss.com?v=3.4.0"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap');
+    body {
+      font-family: 'Sora', sans-serif;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background-color: #e2e8f0; /* background */
+      color: #1e293b; /* text_main */
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 600; /* heading */
+    }
+    .shadow-neomorphic-flat {
+      box-shadow: 8px 8px 16px #cbd5e1, -8px -8px 16px #f8fafc;
+    }
+    .shadow-neomorphic-pressed {
+      box-shadow: inset 8px 8px 16px #cbd5e1, inset -8px -8px 16px #f8fafc;
+    }
+    .shadow-card-medium {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .bg-primary { background-color: #5413eb; }
+    .bg-primary-light { background-color: #9b79eb; }
+    .bg-primary-dark { background-color: #3a0da5; }
+    .bg-secondary { background-color: #b12cd2; }
+    .bg-accent { background-color: #b3ed2a; }
+    .bg-background { background-color: #e2e8f0; }
+    .bg-surface { background-color: #e2e8f0; }
+    .text-text-main { color: #1e293b; }
+    .text-text-muted { color: #475569; }
+    .rounded-20px { border-radius: 20px; }
+    .hover-bg-shift:hover {
+      background-color: #c0ee4b; /* slightly lighter accent for hover */
+      transition: background-color 0.3s ease;
+    }
+    .nav-link-hover:hover {
+      color: #5413eb; /* primary color on hover */
+      transition: color 0.3s ease;
+    }
+    .neomorphic-card {
+      background-color: #e2e8f0; /* surface */
+      border-radius: 20px;
+      box-shadow: 8px 8px 16px #cbd5e1, -8px -8px 16px #f8fafc;
+    }
+    /* Simple hover zoom for images */
+    .img-zoom:hover {
+      transform: scale(1.03);
+      transition: transform 0.3s ease-in-out;
+    }
+    /* Fade-in for sections */
+    .fade-in-section {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .fade-in-section.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .fade-in-section {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class=" antialiased">
+  <header class="bg-surface fixed w-full z-50 transition-all duration-300 shadow-none" id="navbar">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-semibold text-primary">Canopy Oak Artisans</a>
+      <div class="hidden md:flex space-x-8">
+        <a href="#about" class="text-text-main hover:text-primary nav-link-hover">About</a>
+        <a href="#services" class="text-text-main hover:text-primary nav-link-hover">Services</a>
+        <a href="#sustainability" class="text-text-main hover:text-primary nav-link-hover">Sustainability</a>
+        <a href="#testimonials" class="text-text-main hover:text-primary nav-link-hover">Testimonials</a>
+        <a href="#contact" class="text-text-main hover:text-primary nav-link-hover">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button class="text-text-main focus:outline-none" id="mobile-menu-button">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-surface shadow-neomorphic-flat pb-4">
+      <a href="#about" class="block px-4 py-2 text-text-main hover:bg-background nav-link-hover">About</a>
+      <a href="#services" class="block px-4 py-2 text-text-main hover:bg-background nav-link-hover">Services</a>
+      <a href="#sustainability" class="block px-4 py-2 text-text-main hover:bg-background nav-link-hover">Sustainability</a>
+      <a href="#testimonials" class="block px-4 py-2 text-text-main hover:bg-background nav-link-hover">Testimonials</a>
+      <a href="#contact" class="block px-4 py-2 text-text-main hover:bg-background nav-link-hover">Contact</a>
+    </div>
+  </header>
+<main>
+<style>
+  #canopy-oak-privacy-policy {
+    padding-top: 7rem;
+  }
+</style>
+<section id="canopy-oak-privacy-policy">
+  <h2 style="font-size: 2.25rem; font-weight: 700; margin-bottom: 2rem;">Privacy Policy for Canopy Oak Artisans</h2>
+
+  <p style="font-size: 1rem; line-height: 1.5; margin-bottom: 1.5rem;">
+    At Canopy Oak Artisans, deeply rooted in sustainable woodworking and crafting bespoke solid oak furniture,
+    your privacy is paramount. This Privacy Policy outlines how we collect, use, and protect your information
+    when you visit our site, inquire about our Rainforest-inspired designs, or engage with our services.
+  </p>
+
+  <h3 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem;">1. Information We Collect</h3>
+  <p style="font-size: 1rem; line-height: 1.5; margin-bottom: 1rem;">
+    We collect various types of information in connection with the services we provide, which include custom furniture manufacturing,
+    restoration services, and wood carving.
+  </p>
+  <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+    <li style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.75rem;">
+      <strong>Personal Identification Information:</strong> We may collect personal data such as your name,
+      postal address (e.g., Herkimer Street, New York, New York, 11207, USA), email address, and phone number
+      (+19838763657) when you request information, place an order, or subscribe to our newsletter. This
+      information is essential for communication and fulfilling orders for our unique solid oak pieces.
+    </li>
+    <li style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.75rem;">
+      <strong>Project Details:</strong> For custom projects, including bespoke cabinetry and furniture design,
+      we may collect specific details about your design preferences, dimensions, wood choices, and design inspirations
+      to accurately fulfill your requests.
+    </li>
+    <li style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.75rem;">
+      <strong>Usage Data:</strong> We automatically collect information on how our site is accessed and used. This
+      Data may include your computer's Internet Protocol (IP) address, browser type, browser version, the pages of
+      our site that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers,
+      and other diagnostic data. This helps us understand how visitors interact with our Rainforest-inspired collection.
+    </li>
+    <li style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.75rem;">
+      <strong>Cookies and Tracking Technologies:</strong> We use cookies and similar tracking technologies to
+      track the activity on our site and hold certain information. Cookies are files with a small amount of data
+      which may include an anonymous unique identifier. You can instruct your browser to refuse all cookies
+      or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able
+      to use some portions of our service.
+    </li>
+  </ul>
+
+  <h3 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem;">2. How We Use Your Information</h3>
+  <p style="font-size: 1rem; line-height: 1.5; margin-bottom: 1rem;">
+    Canopy Oak Artisans uses the collected data for various purposes:
+  </p>
+  <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+    <li style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.75rem;">
+      To provide and maintain our services, ensuring the delivery of high-quality custom solid oak furniture.
+    </li>
+    <li style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.75rem;">
+      To notify you about changes to our services or product offerings.
+    </li>
+    <li style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.75rem;">
+      To allow you to participate in interactive features of our service when you choose to do so, such as
+      consultations for bespoke designs.
+    </li>
+    <li style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.75rem;">
+      To provide customer support for inquiries related to restoration services or woodworking techniques.
+    </li>
+    <li style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.75rem;">
+      To gather analysis or valuable information so that we can improve our site and the presentation of our sustainable designs.
+    </li>
+    <li style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.75rem;">
+      To monitor the usage of our service and ensure a smooth experience for visitors interested in our handcrafted pieces.
+    </li>
+    <li style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.75rem;">
+      To detect, prevent, and address technical issues that might hinder your experience on our online platform.
+    </li>
+    <li style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.75rem;">
+      To send you newsletters, marketing or promotional materials, and other information related to Canopy Oak Artisans
+      that may be of interest to you, based on your consent.
+    </li>
+  </ul>
+
+  <h3 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem;">3. Legal Basis for Processing Personal Data Under GDPR</h3>
+  <p style="font-size: 1rem; line-height: 1.5; margin-bottom: 1rem;">
+    If you are from the European Economic Area (EEA), Canopy Oak Artisans's legal basis for collecting and using
+    the personal information described in this Privacy Policy depends on the Personal Data we collect and the specific
+    context in which we collect it.
+  </p>
+  <p style="font-size: 1rem; line-height: 1.5; margin-bottom: 1rem;">
+    We may process your Personal Data because:
+  </p>
+  <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+    <li style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.75rem;">
+      We need to perform a contract with you, such as fulfilling an order for custom furniture.
+    </li>
+    <li style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.75rem;">
+      You have given us permission to do so for specific purposes like receiving marketing materials.
+    </li>
+    <li style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.75rem;">
+      The processing is in our legitimate interests and it's not overridden by your rights.
+    </li>
+    <li style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.75rem;">
+      For payment processing, fraud prevention, and other legal compliance obligations.
+    </li>
+  </ul>
+
+  <h3 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem;">4. Retention of Data</h3>
+  <p style="font-size: 1rem; line-height: 1.5; margin-bottom: 1.5rem;">
+    Canopy Oak Artisans will retain your Personal Data only for as long as is necessary for the purposes set
+    out in this Privacy Policy. We will retain and use your Personal Data to the extent necessary to comply
+    with our legal obligations (for example, if we are required to retain your data to comply with applicable laws),
+    resolve disputes, and enforce our legal agreements and policies.
+  </p>
+  <p style="font-size: 1rem; line-height: 1.5; margin-bottom: 1.5rem;">
+    We will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter
+    period, except when this data is used to strengthen the security or to improve the functionality of our service,
+    or we are legally obligated to retain this data for longer time periods.
+  </p>
+
+  <h3 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem;">5. Transfer of Data</h3>
+  <p style="font-size: 1rem; line-height: 1.5; margin-bottom: 1.5rem;">
+    Your information, including Personal Data, may be transferred to and maintained on computers located outside
+    of your state, province, country, or other governmental jurisdiction where the data protection laws may differ
+    from those of your jurisdiction.
+  </p>
+  <p style="font-size: 1rem; line-height: 1.5; margin-bottom: 1.5rem;">
+    Canopy Oak Artisans will take all steps reasonably necessary to ensure that your data is treated securely and
+    in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organization
+    or a country unless there are adequate controls in place including the security of your data and other personal information.
+  </p>
+
+  <h3 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem;">6. Disclosure Of Data</h3>
+  <p style="font-size: 1rem; line-height: 1.5; margin-bottom: 1.5rem;">
+    We may disclose your Personal Data in the good faith belief that such action is necessary to:
+  </p>
+  <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+    <li style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.75rem;">
+      To comply with a legal obligation;
+    </li>
+    <li style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.75rem;">
+      To protect and defend the rights or property of Canopy Oak Artisans;
+    </li>
+    <li style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.75rem;">
+      To prevent or investigate possible wrongdoing in connection with the service;
+    </li>
+    <li style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.75rem;">
+      To protect the personal safety of users of the service or the public;
+    </li>
+    <li style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.75rem;">
+      To protect against legal liability.
+    </li>
+  </ul>
+
+  <h3 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem;">7. Security Of Data</h3>
+  <p style="font-size: 1rem; line-height: 1.5; margin-bottom: 1.5rem;">
+    The security of your data is important to us, but remember that no method of transmission over the Internet,
+    or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect
+    your Personal Data, we cannot guarantee its absolute security. We implement robust physical, electronic, and
+    managerial procedures to safeguard and secure the information we collect.
+  </p>
+
+  <h3 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem;">8. Your Data Protection Rights Under GDPR</h3>
+  <p style="font-size: 1rem; line-height: 1.5; margin-bottom: 1rem;">
+    If you are a resident of the European Economic Area (EEA), you have certain data protection rights.
+    Canopy Oak Artisans aims to take reasonable steps to allow you to correct, amend, delete, or limit the
+    use of your Personal Data.
+  </p>
+  <p style="font-size: 1rem; line-height: 1.5; margin-bottom: 1rem;">
+    If you wish to be informed what Personal Data we hold about you and if you want it to be removed from our systems, please contact us.
+  </p>
+  <p style="font-size: 1rem; line-height: 1.5; margin-bottom: 1rem;">
+    In certain circumstances, you have the following data protection rights:
+  </p>
+  <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+    <li style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.75rem;">
+      <strong>The right to access, update or delete the information we have on you.</strong> Whenever made
+      possible, you can access, update or request deletion of your Personal Data directly within your
+      account settings section. If you are unable to perform these actions yourself, please contact us to assist you.
+    </li>
+    <li style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.75rem;">
+      <strong>The right of rectification.</strong> You have the right to have your information rectified if that
+      information is inaccurate or incomplete.
+    </li>
+    <li style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.75rem;">
+      <strong>The right to object.</strong> You have the right to object to our processing of your Personal Data.
+    </li>
+    <li style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.75rem;">
+      <strong>The right of restriction.</strong> You have the right to request that we restrict the processing
+      of your personal information.
+    </li>
+    <li style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.75rem;">
+      <strong>The right to data portability.</strong> You have the right to be provided with a copy of the
+      information we have on you in a structured, machine-readable, and commonly used format.
+    </li>
+    <li style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.75rem;">
+      <strong>The right to withdraw consent.</strong> You also have the right to withdraw your consent at any time
+      where Canopy Oak Artisans relied on your consent to process your personal information.
+    </li>
+  </ul>
+  <p style="font-size: 1rem; line-height: 1.5; margin-bottom: 1.5rem;">
+    Please note that we may ask you to verify your identity before responding to such requests.
+  </p>
+  <p style="font-size: 1rem; line-height: 1.5; margin-bottom: 1.5rem;">
+    You have the right to complain to a Data Protection Authority about our collection and use of your Personal Data.
+    For more information, please contact your local data protection authority in the European Economic Area (EEA).
+  </p>
+
+  <h3 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem;">9. Service Providers</h3>
+  <p style="font-size: 1rem; line-height: 1.5; margin-bottom: 1.5rem;">
+    We may employ third-party companies and individuals to facilitate our service ("Service Providers"),
+    to provide the service on our behalf, to perform service-related services, or to assist us in analyzing
+    how our service is used.
+  </p>
+  <p style="font-size: 1rem; line-height: 1.5; margin-bottom: 1.5rem;">
+    These third parties have access to your Personal Data only to perform these tasks on our behalf and are
+    obligated not to disclose or use it for any other purpose.
+  </p>
+
+  <h3 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem;">10. Links To Other Sites</h3>
+  <p style="font-size: 1rem; line-height: 1.5; margin-bottom: 1.5rem;">
+    Our site may contain links to other sites that are not operated by us. If you click on a third-party link,
+    you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every
+    site you visit.
+  </p>
+  <p style="font-size: 1rem; line-height: 1.5; margin-bottom: 1.5rem;">
+    We have no control over and assume no responsibility for the content, privacy policies, or practices of any
+    third-party sites or services.
+  </p>
+
+  <h3 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem;">11. Children's Privacy</h3>
+  <p style="font-size: 1rem; line-height: 1.5; margin-bottom: 1.5rem;">
+    Our service does not address anyone under the age of 18 ("Children").
+  </p>
+  <p style="font-size: 1rem; line-height: 1.5; margin-bottom: 1.5rem;">
+    We do not knowingly collect personally identifiable information from anyone under the age of 18. If you are a
+    parent or guardian and you are aware that your Children have provided us with Personal Data, please contact us.
+    If we become aware that we have collected Personal Data from children without verification of parental consent,
+    we take steps to remove that information from our servers.
+  </p>
+
+  <h3 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem;">12. Changes To This Privacy Policy</h3>
+  <p style="font-size: 1rem; line-height: 1.5; margin-bottom: 1.5rem;">
+    We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new
+    Privacy Policy on this page.
+  </p>
+  <p style="font-size: 1rem; line-height: 1.5; margin-bottom: 1.5rem;">
+    You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy
+    are effective when they are posted on this page.
+  </p>
+
+  <h3 style="font-size: 1.75rem; font-weight: 600; margin-bottom: 1rem;">13. Contact Us</h3>
+  <p style="font-size: 1rem; line-height: 1.5; margin-bottom: 1.5rem;">
+    If you have any questions about this Privacy Policy, please contact us:
+  </p>
+  <ul style="list-style: none; padding-left: 0; margin-bottom: 1.5rem;">
+    <li style="font-size: 1rem; line-height: 1.5; margin-bottom: 0.5rem;">
+      By mail: Herkimer Street, New York, New York, 11207, USA
+    </li>
+  </ul>
+</section>
+</main>
+<footer class="bg-[#212529] text-white py-16 mt-20 md:mt-32 relative overflow-hidden">
+    
+    <div class="absolute top-0 left-0 w-full h-2" style="box-shadow: inset 0 8px 16px rgba(0,0,0,0.2), inset 0 -8px 16px rgba(255,255,255,0.05);"></div>
+
+    <div class="container mx-auto px-4 text-center relative z-10">
+      <h3 class="text-3xl font-bold mb-4 text-white">Canopy Oak Artisans</h3>
+      <p class="text-lg mb-8 text-gray-300">Crafting the ultimate expression of nature.</p>
+      <div class="flex flex-wrap justify-center space-x-6 mb-8 text-sm">
+        <a href="./privacy.html" class="hover:text-primary-light transition-colors duration-300">Privacy Policy</a>
+        <a href="./tos.html" class="hover:text-primary-light transition-colors duration-300">Terms of Service</a>
+        <a href="#sustainability" class="hover:text-primary-light transition-colors duration-300">Sustainability Report</a>
+      </div>
+      <p class="text-gray-400 text-sm">&copy; 2024 Canopy Oak Artisans. All rights reserved.</p>
+    </div>
+
+    
+    <div id="cookie-consent-banner" class="fixed bottom-0 left-0 w-full bg-gray-800 text-white p-4 flex flex-col md:flex-row items-center justify-between z-50 shadow-lg">
+      <p class="text-sm mb-2 md:mb-0">We use cookies to enhance your browsing experience. By continuing, you agree to our <a href="./privacy.html" class="text-primary-light underline hover:no-underline">Privacy Policy</a>.</p>
+      <button id="accept-cookies" class="bg-accent text-primary-dark px-6 py-2 rounded-20px text-sm font-semibold hover-bg-shift focus:outline-none focus:ring-2 focus:ring-accent">Accept</button>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when a link is clicked
+    document.querySelectorAll('#mobile-menu a').forEach(item => {
+        item.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    });
+
+    // Navbar shadow on scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('shadow-neomorphic-flat');
+      } else {
+        navbar.classList.remove('shadow-neomorphic-flat');
+      }
+    });
+
+    // Intersection Observer for fade-in sections
+    const fadeElements = document.querySelectorAll('.fade-in-section');
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    fadeElements.forEach(el => {
+      observer.observe(el);
+    });
+
+    // Cookie Consent Logic
+    const cookieBanner = document.getElementById('cookie-consent-banner');
+    const acceptButton = document.getElementById('accept-cookies');
+    const cookieNamePrefix = 'consent_'; 
+    const fullCookieName = cookieNamePrefix + 'canopyoak_'; // Use a unique prefix to minimize conflicts
+
+    function setCookie(name, value, days) {
+        let expires = "";
+        if (days) {
+            const date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+    }
+
+    function getCookie(name) {
+        const nameEQ = name + "=";
+        const ca = document.cookie.split(';');
+        for(let i=0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+
+    // Check for existing cookie consent
+    if (!getCookie(fullCookieName)) {
+        cookieBanner.style.display = 'flex';
+    } else {
+        cookieBanner.style.display = 'none';
+    }
+
+    acceptButton.addEventListener('click', () => {
+        setCookie(fullCookieName, 'accepted', 365); // Store consent for 365 days
+        cookieBanner.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
